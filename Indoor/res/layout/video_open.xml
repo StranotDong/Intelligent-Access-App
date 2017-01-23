@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+    
+     <com.example.indoor.VideoSurfaceView
+        android:id="@+id/SurfaceViewVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"  
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                	android:layout_weight="1.5" />
+
+                <Button
+                    android:id="@+id/refuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/clickbutton"
+                    android:text="拒绝"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/View01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                	android:layout_weight="1.5"  />
+
+                <Button
+                    android:id="@+id/open"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/clickbutton"
+                    android:text="开门"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/View01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                	android:layout_weight="1.5" />
+
+            </LinearLayout>
+                <View
+        android:id="@+id/view3"
+        android:layout_width="10dip"
+        android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+

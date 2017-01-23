@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="9" >
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/outdoorpair"
+            android:textColor="#ffffff"
+            android:textSize="25sp" 
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"/>
+
+        <EditText
+            android:id="@+id/outipAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pair_edit"
+            android:digits="0123456789."
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/hint"
+            android:imeOptions="actionNext"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="25sp" 
+            android:textColorHint="#555555"
+            android:textCursorDrawable="@null"
+            android:layout_weight="0.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="9" >
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textViewAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/indoorpair"
+            android:textColor="#ffffff"
+            android:textSize="25sp" 
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1" />
+
+        <EditText
+            android:id="@+id/inipAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pair_edit"
+            android:digits="0123456789."
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/hint"
+            android:imeOptions="actionDone"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="25sp" 
+            android:textColorHint="#555555"
+            android:textCursorDrawable="@null"
+            android:layout_weight="0.8" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="7.5">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/clickbutton"
+            android:text="确定"
+            android:textColor="@android:color/white" 
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

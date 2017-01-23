@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Indoor</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+ 	<string name="gpio_lock">GPIO 10</string>
+ 	<string name="gpio_outdoor">GPIO 11</string>
+ 	<string name="port">1883</string>
+ 	<string name="ip">192.168.191.3</string>
+ 	<string name="hint_unlock">右滑接听访客来电</string>
+ 	<string name="outdoorpair">请输入室外机ip地址</string>
+ 	<string name="hint">请输入...</string>
+ 	<color name="focus">#FFFFFF</color>
+ 	<color name="no_focus">#555555</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />  
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:launchMode="singleTask" >
+        <activity
+            android:name="com.example.lock.Starting"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.lock.Main"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.example.lock.Video"
+		    android:label="@string/app_name"
+		    android:screenOrientation="landscape">
+        </activity>
+        
+        <activity android:name="com.example.lock.Call"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.example.lock.Video_open"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        
+        <activity android:name="com.example.lock.Pair"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.example.lock.PasswordSet"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <service android:name="com.example.lock.ListenService">
+        </service>
+        
+        <service android:name=".ScreenLockService"></service>
+        
+        <service android:name=".SocketClientService"></service>
+        
+        <service android:name=".CallListenerService"></service>
+        
+        <receiver android:name=".ReconReceiver">
+            <intent-filter>
+                <action android:name="com.example.lock.RECONNECTING"/>
+            </intent-filter>
+            </receiver>
+    </application>
+    
+
+
+</manifest>
